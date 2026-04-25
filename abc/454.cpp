@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+using ll =long long;
 
 void a(){
     int L, R; cin >>L >>R;
@@ -7,11 +8,14 @@ void a(){
 }
 
 void b(){
-    int N, M; cin >>N;
-    string diff, some, F; diff="Yes"; some="No";
-    for (int i=0; i <=N; i++){
-        cin >>F[i];
-        if ((i>0)&&(diff=="Yes")) {(F[i-1]==F[i] ?diff="No" :diff="Yes");
+    int N, M, f; cin >>N, M;
+    string F, diff, some; diff="Yes"; some="No";
+    for (int x :){
+        cin >>f;
+        F +=f;
+        if (i!=0) {
+            if (F.substr(i-1) !=F.substr(i)) diff ="No";
+        };
     }
     cout <<diff <<endl <<some;
 }
