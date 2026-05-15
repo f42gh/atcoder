@@ -3,9 +3,10 @@ using namespace std;
 using ll =long long;
 
 void a(){
-
+  ;
 }
 
 int main(){
-    a();
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
 }

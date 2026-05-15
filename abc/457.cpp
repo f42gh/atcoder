@@ -1,32 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
+using ll =long long;
 
-
-long long n, x, y, l, m;
-
-/*
 void a(){
+  ll n, x, y, l, m;
   cin >>n;
   int A[1000];
   for (int i=0; i <n; i++) cin >>A[i];
   cin >>x;
   cout <<A[x-1] <<endl;
 }
-*/
+
 void b(){
-  vector<vector<int>> B(x, vector<int>(y, 0));
-  cin >>n;
-  for (int i=0; i <n; i++) {
-    cin >>l;
-    for (int j=0; j<l; j++) {
-      cin >>B[i][j];
-    }
+  int N, X, Y;
+  cin >>N;
+  vector<vector<int>> vec(N); //n行の空のベクタv, v[i]の長さに可変
+  for (int i=0; i<N; i++) {
+    int L; cin >>L;
+    vec[i].resize(L); //lのサイズに初期化
+    for (int j=0; j<L; j++) cin >>vec[i][j];
   }
-  cin >>x >>y;
-  cout <<B[x-1][y-1];
+  cin >>X >>Y;
+  cout <<vec[X-1][Y-1];
 }
 
 int main(){
- // a();
- b();
+  ;
 }
